@@ -4,13 +4,16 @@
   "description": "## Your Task",
   "main": "index.js",
   "dependencies": {
+    "cli-table": "^0.3.11",
+    "dotenv": "^16.3.1",
     "inquirer": "^8.2.6",
-    "mysql2": "^3.6.5"
+    "mysql2": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node --watch index.js",
-    "db": "mysql -u root -p < ./db/schema.sql"
+    "db": "mysql -u root -p < ./db/schema.sql",
+    "seed": "mysql -u root -p < ./db/seeds.sql"
   },
   "keywords": [],
   "author": "",
